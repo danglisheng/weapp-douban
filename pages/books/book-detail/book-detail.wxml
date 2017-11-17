@@ -1,0 +1,15 @@
+<import src="../book-item/book-item-template.wxml" />
+<view>
+    <template is="bookItemTemplate" data="{{...bookdetail}}"/>
+</view>
+<view class="detail">
+    <view class="author">
+     <text class="detail-title">作者简介:</text>
+     <text class="detail-value">{{bookdetail.author_intro}}</text>
+    </view>
+    <view>
+     <text class="detail-title">目录：</text>
+     <text class="detail-value">{{bookdetail.catalog}}</text>
+    </view>
+</view>
+

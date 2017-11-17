@@ -1,0 +1,114 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+@import "../stars/stars-template.wxss";
+
+.head {
+    width: 750rpx;
+    height: 250rpx;
+    background-color: #f2f2f2;
+}
+
+.background-control {
+    width: 100%;
+    height: 250rpx;
+    float: left;
+    filter: blur(6rpx);
+    background-size: cover;
+}
+
+.head-content {
+    position: absolute;
+    width: 100%;
+    height: 250rpx;
+    margin-left: 20rpx;
+    top:30rpx;
+    left:20rpx;
+}
+
+.title, .country_year {
+    color: #fff;
+}
+
+.title {
+    margin-top: 15rpx;
+    font-size: 35rpx;
+}
+
+.country_year {
+    margin-top: 25rpx;
+    font-size: 25rpx;
+}
+
+.feedback {
+    margin-top: 35rpx;
+    font-size: 18rpx;
+    color: #999;
+}
+
+.feedback>text {
+    margin-right: 30rpx;
+}
+
+.red {
+    color: red;
+    margin-right: 20rpx;
+}
+
+.head image {
+    position: absolute;
+    top: 150rpx;
+    right: 20rpx;
+    width: 180rpx;
+    height: 240rpx;
+}
+
+.key-info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50rpx 30rpx 60rpx 40rpx;
+    border-bottom: 2rpx solid #d2d2d2;
+}
+
+.keyinfo-content {
+    margin-top: 30rpx;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24rpx;
+}
+.conrete-info{
+     margin-bottom: 24rpx;
+}
+
+.keyinfo-item {
+    margin-right: 36rpx;
+}
+
+.abstract {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60rpx 60rpx 30rpx 40rpx;
+    border-bottom: 2rpx solid #8d8d8d;
+    color: #555;
+    font-size: 32rpx;
+}
+
+.abstract-title {
+    color: #8d8d8d;
+    margin-bottom: 35rpx;
+}
+.actor_pic{
+    width:170rpx;
+    height:240rpx;
+    margin-right:30rpx;
+}
+.actors{
+    padding-left:40rpx;
+}
+.actors-title{
+    display:block;
+    font-size:30rpx;
+    margin-top:30rpx;
+    margin-bottom:30rpx;
+}

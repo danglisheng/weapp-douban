@@ -1,0 +1,23 @@
+
+@import "book-item/book-item-template.wxss";
+swiper{
+    width:100%;
+    height:600rpx
+}
+swiper-item image{
+    width:100%;
+    height:600rpx
+}
+.search{
+    display:flex;
+    flex-direction:row;
+}
+.search-icon{
+    margin:auto 10rpx auto 10rpx;
+}
+.search input{
+    width:600rpx;
+}
+.search .clear-icon{
+    margin:auto auto auto 20rpx;
+}

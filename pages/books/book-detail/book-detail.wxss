@@ -1,0 +1,24 @@
+@import "../book-item/book-item-template.wxss";
+.book_container{
+    
+    height:auto;
+   
+}
+.detail{
+    width:100%;
+    box-sizing:border-box;
+    padding:30rpx;
+
+}
+.detail text{
+    display:block;
+}
+.detail-title{
+    font-size:35rpx;
+    color:#333;
+
+}
+.detail-value{
+    font-size:30rpx;
+    color:#999;
+}

@@ -1,0 +1,36 @@
+{
+  "pages":[
+
+    "pages/books/books",
+    "pages/books/book-detail/book-detail",
+	"pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/more-movie/more-movie"
+   
+	
+  ],
+  "window":{
+    "backgroundTextStyle":"lightblue",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+	  "borderStyle":"white",
+	  "list":[
+		  {
+			"pagePath": "pages/books/books",
+			"text": "图书",
+			"iconPath":"/images/tab/yuedu.png",
+			"selectedIconPath":"/images/tab/yuedu_hl.png"
+		},
+		  {
+			  "pagePath":"pages/movies/movies",
+			  "text":"电影",
+			  "iconPath": "/images/tab/dianying.png",
+			"selectedIconPath": "/images/tab/dianying_hl.png"
+		  }
+		
+	  ]
+  }
+}

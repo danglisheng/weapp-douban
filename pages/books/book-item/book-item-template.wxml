@@ -1,0 +1,22 @@
+<template name="bookItemTemplate">
+    <view class="book_container">
+        <view class="title">{{title}}</view>
+        <view class="book_abstract">
+            <view class="surface_pic" bindtap="bookDetail" data-id="{{bookid}}" data-title="{{title}}">
+                <image src="{{surface_pic_url}}"></image>
+            </view>
+            <view class="book_info">
+                <text class="author">作者：{{author}}</text>
+                <text>出版社：{{publisher}}</text>
+                <text>出版日期：{{pubdate}}</text>
+                <text>售价：{{price}}</text>
+
+                <text class="average">评分：{{average}}</text>
+                <text class="numRaters">参评人数：{{numRaters}}</text>
+            </view>
+        </view>
+        <view class="book_summary">
+            {{summary}}
+        </view>
+    </view>
+</template>

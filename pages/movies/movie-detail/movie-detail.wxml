@@ -1,0 +1,49 @@
+<import src="../stars/stars-template.wxml" />
+<view class="head">
+    <view class="background-control" style="background-image:url({{imgUrl}})"></view>
+    <view class="head-content">
+        <view class="title">{{title}}</view>
+        <view class="country_year">{{countries}}·{{year}}</view>
+        <view class="feedback">
+            <text><text class="red">{{likes_count}}</text>人喜欢</text>
+            <text><text class="red">{{comments_count}}</text>条评论</text>
+        </view>
+    </view>
+    <image src="{{imgUrl}}"></image>
+</view>
+<view class="key-info">
+    <view class="original-title">{{original_title}}</view>
+    <view class="keyinfo-content">
+        <view class="rating conrete-info">
+            <text class="keyinfo-item">评分</text>
+            <view class="stars">
+                <template is="starsTemplate" data="{{stars}}" />
+            </view>
+            <text class="rating-value">{{average}}</text>
+        </view>
+        <view class="conrete-info">
+            <text class="keyinfo-item">导演</text>
+            <text class="keyinfo-value">{{directors}}</text>
+        </view>
+        <view class="conrete-info">
+            <text class="keyinfo-item">影人</text>
+            <text class="keyinfo-value">{{casts}}</text>
+        </view>
+        <view class="conrete-info">
+            <text class="keyinfo-item">类型</text>
+            <text class="keyinfo-value">{{genres}}</text>
+        </view>
+    </view>
+</view>
+<view class="abstract">
+    <view>  
+        <view class="abstract-title">剧情简介</view>
+        {{summary}}
+    </view>
+</view>
+<view class="actors">
+    <text class="actors-title">影人</text>
+    <block wx:for="{{actors_img_url}}">
+     <image src="{{item}}" class="actor_pic"></image>
+    </block>
+</view>

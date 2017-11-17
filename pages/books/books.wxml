@@ -1,0 +1,18 @@
+
+<import src="book-item/book-item-template.wxml" />
+<view class="search">
+    <icon type="search" size="18" class="search-icon" color="#909"></icon>
+    <input placeholder='请输入书籍名称' bindconfirm="onBindBlur"></input>
+    <icon wx:if="{{isSearch}}" type="clear" size="18" color="#922"class="clear-icon" bindtap="returnHome"></icon>
+</view>
+<view wx:if="{{!isSearch}}" class="mainPage">
+    <block wx:for="{{books}}">
+        <template is="bookItemTemplate" data="{{...item}}" />
+    </block>
+</view>
+
+<view class="searchResult">
+   <block wx:for="{{searchResults}}">
+        <template is="bookItemTemplate" data="{{...item}}" />
+   </block>
+</view>
